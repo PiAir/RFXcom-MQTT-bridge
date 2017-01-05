@@ -1,7 +1,7 @@
 RFXcom-MQTT-bridge
 ==================
 
-Directrly connecting your RFXCOM usb dongle to a MQTT broker. This script will post recived events to the MQTT broker and also let you control lighting2 devices such as NEXA switches and dimmers.  
+Directly connect your RFXCOM usb dongle to a MQTT broker. This script will post recived events to the MQTT broker and also let you control lighting2 devices such as NEXA switches and dimmers.  
 
 Requires:
 
@@ -12,4 +12,9 @@ and
 sudo apt-get install mosquitto-clients python-mosquitto
 
 
+Update 5-1-2017
+==================
+
+* Fixed a couple of problems in the script so it creates MQTT that can be parsed by OpenHab
+* Added code so the script can be run as a deamon. Big thanks to http://blog.scphillips.com/posts/2013/07/getting-a-python-script-to-run-in-the-background-as-a-service-on-boot/
 
